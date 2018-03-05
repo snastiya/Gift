@@ -17,7 +17,19 @@ public class Gift {
         Stuff [] gift = {candy1, candy2, jellybean1, jellybean2, marshmallow1, marshmallow2};
         for (Stuff someStuff: gift) {
             System.out.println(someStuff.toString());
+
+            {
+                int total_price = 0;
+                int total_weight = 0;
+
+                total_price = total_price + someStuff.price;
+                total_weight = total_weight + someStuff.weight;
+                System.out.println(total_price);
+                System.out.println(total_weight);
+            }
+
+        }
+
         }
 
     }
-}

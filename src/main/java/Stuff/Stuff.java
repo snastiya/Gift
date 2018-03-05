@@ -5,8 +5,8 @@ package Stuff;
  */
 public class Stuff {
     private String brand;
-    private int weight;
-    private int price;
+    public int weight;
+    public int price;
 
     public Stuff(String brand, int weight, int price) {
         this.brand = brand;
