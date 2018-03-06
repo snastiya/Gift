@@ -18,18 +18,17 @@ public class Gift {
         for (Stuff someStuff: gift) {
             System.out.println(someStuff.toString());
 
-            {
-                int total_price = 0;
-                int total_weight = 0;
-
-                total_price = total_price + someStuff.price;
-                total_weight = total_weight + someStuff.weight;
-                System.out.println(total_price);
-                System.out.println(total_weight);
             }
+        int total_price = 0;
+        int total_weight = 0;
 
+        for(Stuff someStuff1: gift) {total_price = total_price + someStuff1.price;
+            total_weight = total_weight + someStuff1.weight;
+            System.out.println(total_price);
+            System.out.println(total_weight);
+        }
         }
 
         }
 
-    }
+
