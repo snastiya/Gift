@@ -22,10 +22,10 @@ public class Gift {
         int total_price = 0;
         int total_weight = 0;
 
-        for(Stuff someStuff1: gift) {total_price = total_price + someStuff1.price;
-            total_weight = total_weight + someStuff1.weight;
-            System.out.println(total_price);
-            System.out.println(total_weight);
+        for(Stuff someStuff: gift) {total_price = total_price + someStuff.price;
+            total_weight = total_weight + someStuff.weight;
+            System.out.println("Общая стоимость подарка = " + total_price);
+            System.out.println("Общий вес подарка = " + total_weight);
         }
         }
 
